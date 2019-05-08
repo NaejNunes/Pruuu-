@@ -8,15 +8,22 @@ public class GameController : MonoBehaviour
     public static int milhoPonto;
     public  Text txtMilhoPonto, txtMinutos, txtSegundos;
     public int milesimos, segundos, minutos;
+    public GameObject objMilho;
+    public static float x, y;
+    int numero;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        InstanciarMilho();
     }
 
     // Update is called once per frame
     void Update()
     {
+        x = transform.position.x;
+        y = transform.position.y;
+
         txtMilhoPonto.text = "" + milhoPonto;
         txtMinutos.text = "" + minutos;
         txtSegundos.text = "" + segundos;
@@ -41,6 +48,25 @@ public class GameController : MonoBehaviour
             Debug.Log("O jogo acabou");
         }      
     }
+    public void InstanciarMilho()
+    {
 
+        numero = Random.Range(1, 3);
+
+        switch (numero)
+        {
+            case 1:
+                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.20f), Quaternion.identity);
+                break;
+
+            case 2:
+                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.05f), Quaternion.identity);
+                break;
+
+            case 3:
+                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.05f), Quaternion.identity);
+                break;                
+        }
+    }
     
 }
