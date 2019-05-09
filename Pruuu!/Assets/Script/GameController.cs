@@ -53,8 +53,8 @@ public class GameController : MonoBehaviour
     {
 
        
-            numero = Random.Range(1, 3);
-
+            numero = Random.Range(1,4);
+        Debug.Log(numero);
 
             switch (numero)
             {

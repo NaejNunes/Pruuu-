@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHumanoController : MonoBehaviour
 {
@@ -29,11 +30,12 @@ public class PlayerHumanoController : MonoBehaviour
             transform.Translate(Vector2.left * velocidadeHorizontal * Time.deltaTime);
         }  
     }
-    public void OnTriggerEnter2D(Collider2D bk)
+    public void OnTriggerEnter2D(Collider2D coco)
     {
-        if (bk.gameObject.CompareTag("Coco"))
+        if (coco.gameObject.CompareTag("Coco"))
         {
-           
+          
+          
         }
     }
 }
