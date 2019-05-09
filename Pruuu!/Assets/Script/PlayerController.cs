@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
             if (milho.gameObject.CompareTag("Milho"))
             {
             GameController.milhoPonto = GameController.milhoPonto + 1;
+           
             }
         }
 }

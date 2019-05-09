@@ -119,3 +119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c4aae5c1e1fae4da0f9eb3a59ad7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  txtMilhoPonto: {fileID: 0}
+  txtMinutos: {fileID: 0}
+  txtSegundos: {fileID: 0}
+  milesimos: 0
+  segundos: 0
+  minutos: 0
+  objMilho: {fileID: 4815213451492727355}

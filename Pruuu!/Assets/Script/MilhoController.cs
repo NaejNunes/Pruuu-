@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MilhoController : MonoBehaviour
+public class MilhoController : GameController
 {
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,8 @@ public class MilhoController : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D milho)
     {
-        GameController.milhoPonto = GameController.milhoPonto + 1;
-
         Destroy(gameObject);
+
+        InstanciarMilho();
     }
 }

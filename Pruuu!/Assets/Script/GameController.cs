@@ -56,15 +56,15 @@ public class GameController : MonoBehaviour
         switch (numero)
         {
             case 1:
-                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.20f), Quaternion.identity);
+                Instantiate(this.objMilho, new Vector2(GameController.x + 4f, GameController.y + 2.20f), Quaternion.identity);
                 break;
 
             case 2:
-                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.05f), Quaternion.identity);
+                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.20f), Quaternion.identity);
                 break;
 
             case 3:
-                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.05f), Quaternion.identity);
+                Instantiate(this.objMilho, new Vector2(GameController.x - 4f, GameController.y + 2.20f), Quaternion.identity);
                 break;                
         }
     }
