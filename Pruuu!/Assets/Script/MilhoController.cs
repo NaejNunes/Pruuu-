@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MilhoController : GameController
 {
+    public float tempo;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +17,8 @@ public class MilhoController : GameController
         
     }
     public void OnTriggerEnter2D(Collider2D milho)
-    {
-        Destroy(gameObject);
-
-        InstanciarMilho();
+    {       
+            InstanciarMilho();
+            Destroy(gameObject);        
     }
 }

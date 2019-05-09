@@ -22,6 +22,10 @@ public class CocoController : MonoBehaviour
         if (bk.gameObject.CompareTag("Background"))
         {
             Destroy(gameObject);
-        }
+        }      
+        if (bk.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }      
     }  
 }

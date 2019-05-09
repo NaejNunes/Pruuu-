@@ -15,7 +15,8 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InstanciarMilho();
+        Instantiate(this.objMilho, new Vector2(GameController.x + 4f, GameController.y + 2.20f), Quaternion.identity);
+        
     }
 
     // Update is called once per frame
@@ -46,27 +47,29 @@ public class GameController : MonoBehaviour
         if (minutos == 0)
         {
             Debug.Log("O jogo acabou");
-        }      
+        }       
     }
     public void InstanciarMilho()
     {
 
-        numero = Random.Range(1, 3);
+       
+            numero = Random.Range(1, 3);
 
-        switch (numero)
-        {
-            case 1:
-                Instantiate(this.objMilho, new Vector2(GameController.x + 4f, GameController.y + 2.20f), Quaternion.identity);
-                break;
 
-            case 2:
-                Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.20f), Quaternion.identity);
-                break;
+            switch (numero)
+            {
+                case 1:
+                    Instantiate(this.objMilho, new Vector2(GameController.x + 4f, GameController.y + 2.20f), Quaternion.identity);
+                    break;
 
-            case 3:
-                Instantiate(this.objMilho, new Vector2(GameController.x - 4f, GameController.y + 2.20f), Quaternion.identity);
-                break;                
-        }
+                case 2:
+                    Instantiate(this.objMilho, new Vector2(GameController.x + 0f, GameController.y + 2.20f), Quaternion.identity);
+                    break;
+
+                case 3:
+                    Instantiate(this.objMilho, new Vector2(GameController.x - 4f, GameController.y + 2.20f), Quaternion.identity);
+                    break;
+            }
     }
-    
 }
+    
