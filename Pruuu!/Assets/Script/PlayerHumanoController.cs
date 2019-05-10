@@ -34,8 +34,7 @@ public class PlayerHumanoController : MonoBehaviour
     {
         if (coco.gameObject.CompareTag("Coco"))
         {
-          
-          
+            SceneManager.LoadScene("GameOver");         
         }
     }
 }

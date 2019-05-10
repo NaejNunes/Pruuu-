@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -47,7 +48,12 @@ public class GameController : MonoBehaviour
         if (minutos == 0)
         {
             Debug.Log("O jogo acabou");
-        }       
+        }
+
+        if (minutos <= 0 && segundos <= 60)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
     public void InstanciarMilho()
     {

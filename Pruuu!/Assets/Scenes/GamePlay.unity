@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968360772005de498920f8702fbede1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeHorizontal: 0.5
+  velocidadeHorizontal: 2
   tiro: {fileID: 0}
 --- !u!61 &1795218487
 BoxCollider2D:
@@ -1555,7 +1555,7 @@ MonoBehaviour:
   txtMinutos: {fileID: 406271664}
   txtSegundos: {fileID: 562138523}
   milesimos: 60
-  segundos: 60
-  minutos: 2
+  segundos: 0
+  minutos: 1
   objMilho: {fileID: 4815213451492727355, guid: 203258a6097cc5e478653be59e9bdaf9,
     type: 3}
